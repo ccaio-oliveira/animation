@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <link rel="stylesheet" href="assets/css/mainButtons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dobra1.css">
+    <link rel="stylesheet" href="assets/css/dobra2.css">
+    <link rel="stylesheet" href="assets/css/dobra3.css">
+    <link rel="stylesheet" href="assets/css/dobra4.css">
+    <link rel="stylesheet" href="assets/css/dobra5.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+
+<body>
+    <header id="headerEl">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/static/logo/logo-black.png" alt="Logo Image" id="imgLogo" />
+            </a>
+        </div>
+        <a href="" class="btn-contato">
+            <p>Entre em contato</p>
+        </a>
+    </header>
+    <div class="container">
+        <div id="nav-button" class="btnWhite">
+            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="">A Tech Law</a></li>
+                    <li><a href="">O mundo Law</a></li>
+                    <li><a href="">O mundo Tech</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="close-button">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="dobra1">
+            <div id="pin1">
+                <div class="content">
+                    <div class="text">
+                        <h1>
+                            Somos a ponte <br /> entre os mundos <br /> tech e law
+                        </h1>
+                    </div>
+                    <div class="scroll-down" data-target="#dobra2">
+                        <div class="mouse"></div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="dobra2">
+            <div id="trigger2"></div>
+            <div class="content">
+                <div class="text" id="txt2">
+                    <p>
+                        É na tradição do direito onde os negócios imaginados pelos homens encontram
+                        seu respaldo.
+                    </p>
+                    <p>
+                        Mas a mente humana ainda não encontrou seu limite.
+                    </p>
+                </div>
+
+                <div class="text" id="txt3">
+                    <p>
+                        As possibilidades são infinitas e desafiam a fronteira dos códigos e
+                        jurisprudências que, sem alternativa, avançam em ritmo sempre aquém do
+                        necessário a acompanhar as novas criações e tecnologias.
+                    </p>
+                    <p>
+                        Nessa corrida para desbravamento do futuro é comum haver descompasso
+                        entre o que se tem como oportunidade de negócios tech e o que é
+                        trabalhado pelos profissionais do direito.
+                    </p>
+                </div>
+
+                <div className="text" id="txt4">
+                    <p>
+                        Aqueles que insistirem em manterem-se presos em seus mundos vão perder
+                        tudo o que o outro pode oferecer.
+                    </p>
+                    <p>
+                        O mundo tech pode mais se tiver enraizado no law. O law necessita
+                        entender o tech para fazer uso de toda sua potencialidade.
+                    </p>
+                </div>
+
+                <div className="text" id="txt5">
+                    <p>
+                        Somos um braço especializado da Schinzari e Folegatti Advogados que
+                        oferece diversas tecnologias a qualquer negócio jurídico e vice-versa.
+                    </p>
+                    <button id="knowTech5">Conheça as tecnologias oferecidas</button>
+                </div>
+            </div>
+            <div class="image">
+                <canvas></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/mainButtons.js"></script>
+    <script src="assets/js/dobra2.js"></script>
+    <script src="assets/js/dobra1.js"></script>
+</body>
+
+</html>

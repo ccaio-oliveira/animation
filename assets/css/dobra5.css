@@ -1,0 +1,160 @@
+#txt5 {
+    position: absolute;
+    top: 10%;
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+#knowTech5 {
+    cursor: pointer;
+    display: block;
+    width: 350px;
+    min-width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    color: #141D27;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+#myimg5 {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    right: -90px;
+}
+
+.content5 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.paper {
+    display: flex;
+    width: 13rem;
+    height: 323px;
+    font-size: 0.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.paper:hover {
+    width: 440px;
+    height: 410px;
+    margin-right: 0px;
+}
+
+.paper-left {
+    border: 0.89px solid #000;
+    background: #fff;
+    padding: 10px;
+}
+
+.paper:hover .paper-left {
+    padding: 20px;
+    width: 250px;
+    font-size: 1.0rem;
+}
+
+.paper-right .restPaperRight {
+    position: relative;
+    top: 40px;
+    border-top: 0px;
+    border-bottom: 0.89px;
+    border-left: 0px;
+    border-right: 0.89px;
+    border-style: solid;
+    border-color: #000;
+    height: 280px;
+    width: 58px;
+    background: #fff;
+}
+
+.paper:hover .paper-right .restPaperRight {
+    height: 367px;
+}
+
+.angle {
+    position: relative;
+    right: 6.5px;
+    top: 21px;
+    width: 70px;
+    border: 0.6px solid #000 !important;
+    transform: rotate(35deg);
+}
+
+.text-right {
+    position: inherit;
+    top: 30px;
+    transform: rotate(90deg);
+    font-size: 2.0rem;
+    color: #2D3E50;
+}
+
+.paper4 .text-right {
+    height: 0px;
+    width: 200px;
+    font-size: 1.5rem;
+    top: 140px;
+    right: 60px;
+}
+
+.paper:hover .text-right {
+    top: 0px;
+    font-size: 3.0rem;
+    letter-spacing: 1px;
+}
+
+.paper4:hover .text-right {
+    width: 300px;
+    font-size: 2.0rem;
+    top: 200px;
+    right: 105px;
+}
+
+@media (max-width: 430px){
+    #txt5 {
+        width: 90%;
+        font-size: 1.2rem;
+        position: relative;
+        top: -200px;
+    }
+
+    #knowTech {
+        width: 150px;
+        font-size: 1.0rem;
+    }
+
+    #myimg5 {
+        width: 245rem;
+        left: -13rem !important;
+    }
+
+    .modal-body {
+        overflow-y: auto;
+    }
+
+    .content5 {
+        height: 60dvh;
+        padding-bottom: 50px;
+    }
+
+    .paper {
+        width: 90%;
+        height: 30rem;
+        margin-bottom: 20px;
+    }
+
+    .paper-left {
+        font-size: 1.0rem;
+    }
+
+    .paper-right .restPaperRight {
+        height: 27.3rem;
+    }
+}

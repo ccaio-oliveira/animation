@@ -1,0 +1,58 @@
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indivisible', 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #F3F3F3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content .text p:first-child {
+    margin-bottom: 30px;
+}
+
+/* scrollbar  */
+/* Para navegadores baseados em WebKit, como Chrome e Safari */
+::-webkit-scrollbar {
+    background-color: #f1f1f1;
+    width: 5px;
+}
+
+/* Para navegadores baseados em Mozilla, como Firefox */
+::-moz-scrollbar {
+    background-color: #f1f1f1;
+    width: 5px;
+}
+
+/* Para navegadores baseados em WebKit, como Chrome e Safari */
+::-webkit-scrollbar-thumb {
+    background-color: #141D27;
+}
+
+/* Para navegadores baseados em Mozilla, como Firefox */
+::-moz-scrollbar-thumb {
+    background-color: #141D27;
+}
+
+/* Para navegadores baseados em WebKit, como Chrome e Safari */
+::-webkit-scrollbar-thumb {
+    background-color: #141D27;
+    min-height: 20px;
+    /* altura mínima */
+}
+
+/* Para navegadores baseados em Mozilla, como Firefox */
+::-moz-scrollbar-thumb {
+    background-color: #141D27;
+    min-height: 20px;
+    /* altura mínima */
+}
