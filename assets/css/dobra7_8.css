@@ -3,3 +3,203 @@
     width: 100vw;
     background: #0E141C;
 }
+
+#image {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    top: -200px;
+    left: 380px;
+}
+
+#txt7 {
+    position: relative;
+    z-index: 2;
+    width: 40%;
+    top: 40%;
+    left: 6%;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.knowServTech {
+    cursor: pointer;
+    color: #fff;
+    background: #0E141C;
+    padding: 10px;    
+    display: block;
+    width: 350px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 4px 11px rgba(106, 106, 106, 0.25);
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+/* modal  */
+.btnNextModal {
+    position: absolute;
+    top: 7.6rem;
+    left: 4rem;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    background: #F3F3F3;
+    box-shadow: 1.729068398475647px 6.916273593902588px 19.019752502441406px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.content71, .content72 {
+    color: #000;
+}
+
+.content71 .body, .content72 .body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content71 .col, .content72 .col {
+    width: 395px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.content71 .box, .content72 .box {
+    width: 23rem;
+    border-radius: 16px;
+    font-weight: 500;
+    box-shadow: 1.012287974357605px 4.04915189743042px 11.135167121887207px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content71 .box span {
+    font-weight: bold;
+}
+
+.content71 .box-sm, .content72 .box-sm {
+    background: #D9D9D9;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.content71 .box-md-2, .content72 .box-md-2 {
+    background: #2D3E50;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.box-sm:hover {
+    background: #bebebe;
+}
+
+.content71 .box-md-2:hover, .content72 .box-md-2:hover {
+    background: #141D27;
+}
+
+.content71 .col-1 .box {
+    padding: 0.5rem 0.6rem;
+}
+
+.content72 .col-1 .box {
+    padding: 0.5rem 0.6rem;
+}
+
+.content71 .col-2 .box {
+    padding: .8rem 0.6rem;
+}
+
+.content72 .col-2 .box {
+    padding: 1.3rem 0.6rem;
+}
+
+.content71 .col-3 .box {
+    padding: 1.3rem 0.6rem;
+}
+
+.content72 .col-3 .box {
+    padding: 1.0rem 0.6rem;
+}
+
+.content72 .col-1 .box-md-2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.content72 .col-1 .box-md-2 span {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 430px){
+    #txt7 {
+        width: 90%;
+        font-size: 1.2rem;
+        position: relative;
+        top: -20px;
+    }
+
+    #txt7 p {
+        margin-bottom: 270px;
+    }
+
+    #myimg7 {
+        height: 50% !important;
+        position: relative;
+    }
+
+    .knowServTech {
+        width: 250px;
+        font-size: 1.0rem;
+    }
+
+    .btnNextModal {
+        left: 25px;
+    }
+
+    .content71, .content72 {
+        margin-top: 15px;
+    }
+
+    .content71 .col, .content72 .col {
+        height: 20rem;
+    }
+
+    .content71 .box, .content72 .box {
+        width: 95%;
+    }
+
+    .content71 .col-1 .box {
+        padding: 0.7rem 0.5rem;
+    }
+
+    .content72 .col-1 .box {
+        padding: 0.4rem 0.5rem;
+    }
+
+    .content71 .col-2 .box {
+        padding: 1.0rem 0.5rem;
+    }
+
+    .content72 .col-2 .box {
+        padding: 1.4rem 0.5rem;
+    }
+
+    .content71 .col-3 .box {
+        padding: 1.4rem 0.5rem;
+    }
+
+    .content72 .col-3 .box {
+        padding: 1.3rem 0.5rem;
+    }
+}
