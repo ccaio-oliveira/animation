@@ -111,43 +111,43 @@ function render() {
         })
 
     } else if (url.includes('dobra-3')) {
-        gsap.to('#txt2', {
+        gsap.to('#txt2', 0.1, {
             opacity: 0,
             x: -200
         })
 
-        gsap.to('#txt3', {
+        gsap.to('#txt3', 0.1, {
             opacity: 1,
             x: 0
         })
 
-        gsap.to('#txt4', {
+        gsap.to('#txt4', 0.1, {
             opacity: 0,
             x: -200
         })
     } else if (url.includes('dobra-4')){
 
-        gsap.to('#txt3', {
+        gsap.to('#txt3', 0.1, {
             opacity: 0,
             x: -200
         })
 
-        gsap.to('#txt4', {
+        gsap.to('#txt4', 0.1, {
             opacity: 1,
             x: 0
         })
 
-        gsap.to('#txt5', {
+        gsap.to('#txt5', 0.1, {
             opacity: 0,
             x: -200
         })
     } else if (url.includes('dobra-5')){
-        gsap.to('#txt4', {
+        gsap.to('#txt4', 0.1, {
             opacity: 0,
             x: -200
         })
 
-        gsap.to('#txt5', {
+        gsap.to('#txt5', 0.1, {
             opacity: 1,
             x: 0
         })

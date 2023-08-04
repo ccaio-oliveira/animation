@@ -1,0 +1,46 @@
+#dobra3 {
+    position: relative;
+    background: #0E141C;
+    height: 100vh;
+    width: 100vw;
+}
+
+#dobra3 .content {
+    color: #fff;
+    font-size: 2.0rem;
+    display: flex;
+    align-items: center;
+}
+
+#txt61, #txt62 {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 35%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.0rem;
+    font-weight: 600;
+    opacity: 0;
+}
+
+#txt62 {
+    width: 30%;
+}
+
+@media (max-width: 428px){
+    #dobra3 .image img {
+        height: 74%;
+        transform: scale(0.65);
+    }
+
+    #txt61 {
+        width: 75%;
+        font-size: 0.9rem;
+    }
+
+    #txt62 {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+}

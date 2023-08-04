@@ -22,13 +22,6 @@
     margin-top: 30px;
 }
 
-#myimg5 {
-    width: 100%;
-    position: relative;
-    top: 20px;
-    right: -90px;
-}
-
 .content5 {
     display: flex;
     justify-content: space-evenly;
