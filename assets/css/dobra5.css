@@ -22,6 +22,20 @@
     margin-top: 30px;
 }
 
+#modal5 {
+    position: fixed;
+    top: 35%;
+    width: 100vw;
+
+    right: -100vw;
+}
+
+.modal-container5 {
+    position: fixed;
+    opacity: 0;
+    right: -100vw;
+}
+
 .content5 {
     display: flex;
     justify-content: space-evenly;
@@ -51,7 +65,7 @@
 .paper:hover .paper-left {
     padding: 20px;
     width: 250px;
-    font-size: 1.0rem;
+    font-size: 0.8rem;
 }
 
 .paper-right .restPaperRight {

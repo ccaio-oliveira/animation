@@ -39,18 +39,6 @@ mesh.position.x = 0;
 mesh.position.z = -5;
 scene.add(mesh);
 
-// Animação da imagem com GSAP e ScrollTrigger
-gsap.to('#image', {
-    left: -500,
-    scrollTrigger: {
-        trigger: "#dobra7_8",
-        scroller: '#main',
-        start: "top top ",
-        end: "50% top ",
-        markers: true
-    }
-});
-
 function render() {
     requestAnimationFrame(render);
     mesh.rotation.y += 0.01;
