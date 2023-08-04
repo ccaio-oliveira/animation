@@ -18,7 +18,7 @@ gsap.to('#imgLogo', {
     scrollTrigger: {
         trigger: dobra3,
         start: `+599% top `,
-        end: `799% top`,
+        end: `1199% top`,
         scroller: `#main`,
         onEnter: function() {
             imgLogo.src = 'assets/static/logo/logo-white.png'
@@ -33,6 +33,8 @@ gsap.to('#imgLogo', {
                 backgroundColor: '#0E141C',
                 color: '#FFF'
             })
+
+            document.querySelector('.sidebar').classList.add('blackCont');
         },
         onLeave: function() {
             imgLogo.src = 'assets/static/logo/logo-black.png'
@@ -47,6 +49,8 @@ gsap.to('#imgLogo', {
                 backgroundColor: '#F3F3F3',
                 color: '#000'
             })
+
+            document.querySelector('.sidebar').classList.remove('blackCont');
         },
         onEnterBack: function() {
             imgLogo.src = 'assets/static/logo/logo-white.png'
@@ -61,6 +65,8 @@ gsap.to('#imgLogo', {
                 backgroundColor: '#0E141C',
                 color: '#FFF'
             })
+
+            document.querySelector('.sidebar').classList.add('blackCont');
         },
         onLeaveBack: function() {
             imgLogo.src = 'assets/static/logo/logo-black.png'
@@ -75,6 +81,8 @@ gsap.to('#imgLogo', {
                 backgroundColor: '#F3F3F3',
                 color: '#000'
             })
+
+            document.querySelector('.sidebar').classList.remove('blackCont');
         }
     }
 })

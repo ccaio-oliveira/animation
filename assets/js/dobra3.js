@@ -49,10 +49,6 @@ gsap.to('#txt61', {
                     gsap.to('#txt62', 0.0001, {
                         opacity: 0
                     })
-                } else {
-                    gsap.to('#txt62', {
-                        opacity: 1
-                    })
                 }
             })
         }

@@ -1,0 +1,117 @@
+#dobra9 {
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#dobra9 .content {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50.1%;
+    text-align: center;
+    font-size: 2.1rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dobra9 .content .text {
+    font-size: 1.5rem;
+}
+
+#dobra9 .knowServTech {
+    width: 200px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1370px){
+    #dobra9 .content {
+        font-size: 2.0rem;
+        padding-top: 14.5%;
+    }
+}
+
+@media (max-width: 770px){
+    #dobra9 .content {
+        font-size: 1.5rem;
+    }
+
+    .scroll-down {
+        bottom: -90%;
+    }
+}
+
+@media (max-width: 708px){
+    #dobra9 .image img {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 655px){
+    #dobra9 .image img {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 615px){
+    #dobra9 .image img {
+        transform: scale(0.80);
+    }
+}
+
+@media (max-width: 570px){
+    #dobra9 .content {
+        font-size: 1.2rem;
+    }
+
+    .scroll-down {
+        bottom: -110%;
+    }
+}
+
+@media (max-width: 555px){
+    #dobra9 .image img {
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width: 516px){
+    #dobra9 .image img {
+        transform: scale(0.65);
+        height: 74%;
+    }
+
+    #dobra9 .content {
+        top: 10%;
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 450px){
+    #dobra9 .image img {
+        transform: scale(0.55);
+    }
+}
+
+@media (max-width: 428px){
+    #dobra9 .content {
+        width: 60%;
+        top: 40%;
+        left: 20%;
+
+        font-size: 0.9rem;
+    }
+
+    #dobra9 .knowServTech {
+        width: 150px;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+}
