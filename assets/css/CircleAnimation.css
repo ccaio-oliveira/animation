@@ -1,6 +1,6 @@
 /* === BASE === */
 .circle_animation_container {
-  position: fixed;
+  position: absolute;
   inset: 0;
 }
 
