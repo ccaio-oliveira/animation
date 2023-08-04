@@ -23,7 +23,7 @@
 }
 
 #modal5 {
-    position: fixed;
+    position: absolute;
     top: 35%;
     width: 100vw;
 
@@ -31,7 +31,7 @@
 }
 
 .modal-container5 {
-    position: fixed;
+    position: absolute;
     opacity: 0;
     right: -100vw;
 }

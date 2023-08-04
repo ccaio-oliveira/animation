@@ -20,6 +20,10 @@ a {
     margin-bottom: 30px;
 }
 
+#txt2, #txt3, #txt4, #txt5, #txt61, #txt62, #txt7, #txt81, #txt82 {
+    opacity: 0;
+}
+
 /* scrollbar  */
 /* Para navegadores baseados em WebKit, como Chrome e Safari */
 ::-webkit-scrollbar {
@@ -55,4 +59,8 @@ a {
     background-color: #141D27;
     min-height: 20px;
     /* altura mínima */
+}
+
+@media (max-width: 428px){
+    
 }
