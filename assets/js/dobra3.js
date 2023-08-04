@@ -6,51 +6,50 @@ ScrollTrigger.create({
     end: '100% top',
 })
 
-gsap.to('#txt61', {
+const index3 = [];
+const frameCount3 = 100;
+
+for(let i = 1; i <= 100; i++){
+    index3.push(i);
+}
+
+const imageSeq3 = {
+    frame: 1
+}
+
+gsap.to(imageSeq3, {
+    frame: frameCount3 - 1,
+    snap: "frame",
+    ease: `none`,
     scrollTrigger: {
-        trigger: '#dobra3',
-        scroller: '#main',
-        start: 'top top',
-        end: '50% top',
-        onEnter: function () {
-            gsap.to('#txt61', {
-                opacity: 1
+        scrub: 0.15,
+        trigger: `#dobra3`,
+        //   set start end according to preference
+        start: `top top`,
+        end: `100% top`,
+        scroller: `#main`,
+    },
+    onUpdate: function(){
+        console.log(imageSeq3.frame);
+        if(imageSeq3.frame < 50){
+            gsap.to('#txt61', 0.1, {
+                opacity: 1,
             })
 
-            gsap.to('#txt62', 0.0001, {
-                opacity: 0
-            })
-        },
-        onLeave: function(){
-            gsap.to('#txt61', {
-                opacity: 0
+            gsap.to('#txt62', 0.1, {
+                opacity: 0,
             })
 
-            gsap.to('#txt62', {
-                opacity: 1
-            })
-        },
-        onEnterBack: function(){
-            gsap.to('#txt61', {
-                opacity: 1
+        } else if (imageSeq3.frame > 49 && imageSeq3.frame < 100){
+            gsap.to('#txt61', 0.1, {
+                opacity: 0,
             })
 
-            gsap.to('#txt62', 0.01, {
-                opacity: 0
-            })
-        },
-        onLeaveBack: function(){
-            gsap.to('#txt61', {
-                opacity: 0
+            gsap.to('#txt62', 0.1, {
+                opacity: 1,
+                right: 0
             })
 
-            window.addEventListener('wheel', function(event){
-                if (event.deltaY < 0){
-                    gsap.to('#txt62', 0.0001, {
-                        opacity: 0
-                    })
-                }
-            })
-        }
+        } 
     }
-})
+});

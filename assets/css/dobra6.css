@@ -26,6 +26,8 @@
 
 #txt62 {
     width: 30%;
+    left: 0%;
+    top: 40%;
 }
 
 @media (max-width: 428px){
