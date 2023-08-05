@@ -150,11 +150,16 @@
         width: 90%;
         font-size: 1.2rem;
         position: relative;
-        top: -20px;
+        top: 10rem;
+    }
+
+    #image {
+        left: 9rem;
+        top: -80rem;
     }
 
     #txt7 p {
-        margin-bottom: 270px;
+        margin-bottom: 320px;
     }
 
     #myimg7 {

@@ -49,7 +49,7 @@ render();
 const index = [];
 const frameCount8 = 150;
 
-for(let i = 1; i <= 150; i++){
+for (let i = 1; i <= 150; i++) {
     index.push(i);
 }
 
@@ -69,32 +69,40 @@ gsap.to(imageSeq8, {
         end: `300% top`,
         scroller: `#main`,
     },
-    onUpdate: function(){
+    onUpdate: function () {
         console.log(imageSeq8.frame);
-        if(imageSeq8.frame < 50){
+        if (imageSeq8.frame < 50) {
             gsap.to('#txt7', 0.1, {
                 opacity: 1,
                 left: '6%'
             })
 
-            gsap.to('#image', 0.2, {
-                left: 400
-            })
+            if (window.innerWidth > 430) {
+                gsap.to('#image', 0.2, {
+                    left: 400
+                })
+            }
 
             gsap.to('#txt81', 0.1, {
                 opacity: 0,
                 right: '-6%'
             })
 
-        } else if (imageSeq8.frame > 49 && imageSeq8.frame < 100){
+        } else if (imageSeq8.frame > 49 && imageSeq8.frame < 100) {
             gsap.to('#txt7', 0.1, {
                 opacity: 0,
                 left: '-6%'
             })
 
-            gsap.to('#image', 0.2, {
-                left: -550
-            })
+            if (window.innerWidth > 430) {
+                gsap.to('#image', 0.2, {
+                    left: -550
+                })
+            } else {
+                gsap.to('#image', 0.2, {
+                    top: '-80rem'
+                })
+            }
 
             gsap.to('#txt81', 0.1, {
                 opacity: 1,
@@ -105,7 +113,8 @@ gsap.to(imageSeq8, {
                 opacity: 0,
                 right: -200
             })
-        } else if(imageSeq8.frame > 99){
+
+        } else if (imageSeq8.frame > 99) {
             gsap.to('#txt81', 0.1, {
                 opacity: 0,
                 right: -20
@@ -114,6 +123,12 @@ gsap.to(imageSeq8, {
             gsap.to('#txt82', 0.1, {
                 opacity: 1
             })
+
+            if(window.innerWidth < 430){
+                gsap.to('#image', {
+                    top: '-84rem'
+                })
+            }
         }
     }
 });
