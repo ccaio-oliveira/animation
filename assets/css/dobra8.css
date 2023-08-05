@@ -92,11 +92,15 @@
     }
 
     #txt81 {
-        top: -20rem
+        top: 3rem
     }
 
     #txt82 {
-        top: -30rem;
+        top: -5rem;
+    }
+
+    #btnModal8 {
+        top: 30rem;
     }
 
     #txt82 a {

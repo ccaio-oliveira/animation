@@ -100,7 +100,7 @@ gsap.to(imageSeq8, {
                 })
             } else {
                 gsap.to('#image', 0.2, {
-                    top: '-80rem'
+                    top: '-54rem'
                 })
             }
 
@@ -126,7 +126,7 @@ gsap.to(imageSeq8, {
 
             if(window.innerWidth < 430){
                 gsap.to('#image', {
-                    top: '-84rem'
+                    top: '-56rem'
                 })
             }
         }
