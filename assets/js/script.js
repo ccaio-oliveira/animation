@@ -5,7 +5,7 @@ function loco() {
 
     const locoScroll = new LocomotiveScroll({
         el: document.querySelector("#main"),
-        smooth: true
+        smooth: true,
     });
     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
     locoScroll.on("scroll", ScrollTrigger.update);
@@ -19,7 +19,7 @@ function loco() {
             return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
         },
         // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-        pinType: document.querySelector("#main").style.transform || window.innerWidth <= 768 ? "transform" : "fixed"
+        pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
     });
 
     // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 

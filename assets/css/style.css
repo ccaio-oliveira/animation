@@ -7,8 +7,8 @@
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background: #F3F3F3;
 }
 
@@ -63,10 +63,11 @@ a {
 
 @media (max-width: 430px){
     html, body {
-        overflow-x: hidden;
+        width: 100vw;
+        height: 100vh;
     }
 
     #main {
-        overflow-y: auto;
+        overflow-y: scroll;
     }
 }
