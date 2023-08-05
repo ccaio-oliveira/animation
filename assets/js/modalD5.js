@@ -62,3 +62,27 @@ openMD7.onclick = () => {
         }
     }
 }
+
+// modal dobra 8
+const openMD8 = document.querySelector('#btnModal8');
+
+
+openMD8.addEventListener('click', () => {
+    t1.to('#modal8', { right: 0, top: 0 })
+        .to('#modal8', { height: '100vh' }, '-=1.0')
+        .to('.modal-container8', { right: '2%', opacity: 1, PointerEvents: 'all', stagger: .2 }, '-=.9')
+
+    const closeWithBg = document.querySelector('.modal-bg8');
+    closeWithBg.onclick = () => {
+        t1.to('.modal-container8', { right: '-100vw', opacity: 0, PointerEvents: 'all', stagger: .2 }, '-=.9')
+            .to('#modal8', { right: -200 })
+            .to('#modal8', { height: 0 }, '-=1.0')
+    }
+
+    const closeBtn8 = document.querySelector('.btnClose8');
+    closeBtn8.onclick = () => {
+        t1.to('.modal-container8', { right: '-100vw', opacity: 0, PointerEvents: 'all', stagger: .2 }, '-=.9')
+            .to('#modal8', { right: -200 })
+            .to('#modal8', { height: 0 }, '-=1.0')
+    }
+})
