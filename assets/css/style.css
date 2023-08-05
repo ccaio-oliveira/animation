@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+#main {
+    border: 1px solid red;
+}
+
 .content .text p:first-child {
     margin-bottom: 30px;
 }
@@ -61,6 +65,12 @@ a {
     /* altura mínima */
 }
 
-@media (max-width: 428px){
-    
+@media (max-width: 430px){
+    html, body {
+        overflow-x: hidden;
+    }
+
+    #main {
+        overflow-y: auto;
+    }
 }

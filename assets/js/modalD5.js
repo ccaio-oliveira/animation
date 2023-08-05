@@ -3,7 +3,9 @@ const openMD5 = document.querySelector('#knowTech5');
 
 var t1 = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
 openMD5.addEventListener('click', () => {
-    t1.to('#modal5', { right: 0, top: 0 })
+    t1.to('.modal', {
+        display: 'initial'
+    }).to('#modal5', { right: 0, top: 0 })
         .to('#modal5', { height: '100vh' }, '-=1.0')
         .to('.modal-container5', { right: '2%', opacity: 1, PointerEvents: 'all', stagger: .2 }, '-=.9')
 

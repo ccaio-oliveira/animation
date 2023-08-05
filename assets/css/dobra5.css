@@ -28,6 +28,7 @@
     width: 100vw;
 
     right: -100vw;
+    display: none;
 }
 
 .modal-container {
