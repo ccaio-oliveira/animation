@@ -21,3 +21,44 @@ openMD5.addEventListener('click', () => {
             .to('#modal5', { height: 0 }, '-=1.0')
     }
 })
+
+// modal dobra 7
+const openMD7 = document.querySelector('#btnModal7');
+
+openMD7.onclick = () => {
+    t1.to('#modal7', { right: 0, top: 0 })
+        .to('#modal7', { height: '100vh' }, '-=1.0')
+        .to('.modal-container7', { right: '2%', opacity: 1, PointerEvents: 'all', stagger: .2 }, '-=.9')
+
+    const closeWithBg = document.querySelector('.modal-bg7');
+    closeWithBg.onclick = () => {
+        t1.to('.modal-container7', { right: '-100vw', opacity: 0, PointerEvents: 'all', stagger: .2 }, '-=.9')
+            .to('#modal7', { right: -200 })
+            .to('#modal7', { height: 0 }, '-=1.0')
+    }
+
+    const closeBtn7 = document.querySelector('.btnClose7');
+    closeBtn7.onclick = () => {
+        t1.to('.modal-container7', { right: '-100vw', opacity: 0, PointerEvents: 'all', stagger: .2 }, '-=.9')
+            .to('#modal7', { right: -200 })
+            .to('#modal7', { height: 0 }, '-=1.0')
+    }
+
+    const nextModal = document.querySelector('.btnNextModal');
+    nextModal.onclick = () => {
+        t1.to('.modal-container7', { right: '-100vw', opacity: 0, PointerEvents: 'all', stagger: .2 }, '-=.9')
+            .to('#modal7', { right: -200 })
+            .to('#modal7', { height: 0 }, '-=1.0')
+
+        t1.to('#modal72', { right: 0, top: 0 })
+            .to('#modal72', { height: '100vh' }, '-=1.0')
+            .to('.modal-container72', { right: '2%', opacity: 1, PointerEvents: 'all', stagger: .2 }, '-=.9')
+
+        const closeBtn72 = document.querySelector('.btnClose72');
+        closeBtn72.onclick = () => {
+            t1.to('.modal-container72', { right: '-100vw', opacity: 0, PointerEvents: 'all', stagger: .2 }, '-=.9')
+                .to('#modal72', { right: -200 })
+                .to('#modal72', { height: 0 }, '-=1.0')
+        }
+    }
+}

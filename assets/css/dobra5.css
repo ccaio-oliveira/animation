@@ -22,7 +22,7 @@
     margin-top: 30px;
 }
 
-#modal5 {
+.modal {
     position: absolute;
     top: 35%;
     width: 100vw;
@@ -30,7 +30,7 @@
     right: -100vw;
 }
 
-.modal-container5 {
+.modal-container {
     position: absolute;
     opacity: 0;
     right: -100vw;
