@@ -7,5 +7,4 @@ ScrollTrigger.create({
     //   set start end according to preference
     start: `top top`,
     end: `40% top`,
-    markers: true
 });

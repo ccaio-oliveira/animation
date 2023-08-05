@@ -94,16 +94,6 @@ gsap.to(imageSeq8, {
                 left: '-6%'
             })
 
-            if (window.innerWidth > 430) {
-                gsap.to('#image', 0.2, {
-                    left: -550
-                })
-            } else {
-                gsap.to('#image', 0.2, {
-                    top: '-54rem'
-                })
-            }
-
             gsap.to('#txt81', 0.1, {
                 opacity: 1,
                 right: 0
@@ -113,6 +103,20 @@ gsap.to(imageSeq8, {
                 opacity: 0,
                 right: -200
             })
+
+            if (window.innerWidth > 430) {
+                gsap.to('#image', 0.2, {
+                    left: -550
+                })
+            } else {
+                gsap.to('#image', 0.2, {
+                    top: '-54rem'
+                })
+
+                gsap.to('#txt82', 0.2, {
+                    right: -500
+                })
+            }
 
         } else if (imageSeq8.frame > 99) {
             gsap.to('#txt81', 0.1, {
@@ -126,7 +130,7 @@ gsap.to(imageSeq8, {
 
             if(window.innerWidth < 430){
                 gsap.to('#image', {
-                    top: '-56rem'
+                    top: '-57rem'
                 })
             }
         }

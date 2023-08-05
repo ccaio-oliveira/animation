@@ -16,10 +16,6 @@ a {
     text-decoration: none;
 }
 
-#main {
-    border: 1px solid red;
-}
-
 .content .text p:first-child {
     margin-bottom: 30px;
 }

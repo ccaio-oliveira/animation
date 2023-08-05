@@ -1,7 +1,6 @@
-const openMD5 = document.querySelector('#knowTech5');
-
-
 var t1 = gsap.timeline({ defaults: { duration: .7, ease: 'expo.inOut' } });
+
+const openMD5 = document.querySelector('#knowTech5');
 openMD5.addEventListener('click', () => {
     t1.to('.modal', {
         display: 'initial'
@@ -28,7 +27,9 @@ openMD5.addEventListener('click', () => {
 const openMD7 = document.querySelector('#btnModal7');
 
 openMD7.onclick = () => {
-    t1.to('#modal7', { right: 0, top: 0 })
+    t1.to('.modal', {
+        display: 'initial'
+    }).to('#modal7', { right: 0, top: 0 })
         .to('#modal7', { height: '100vh' }, '-=1.0')
         .to('.modal-container7', { right: '2%', opacity: 1, stagger: .2 }, '-=.9')
 
@@ -70,7 +71,9 @@ const openMD8 = document.querySelector('#btnModal8');
 
 
 openMD8.addEventListener('click', () => {
-    t1.to('#modal8', { right: 0, top: 0 })
+    t1.to('.modal', {
+        display: 'initial'
+    }).to('#modal8', { right: 0, top: 0 })
         .to('#modal8', { height: '100vh' }, '-=1.0')
         .to('.modal-container8', { right: '2%', opacity: 1, stagger: .2 }, '-=.9')
 

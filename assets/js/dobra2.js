@@ -43,11 +43,11 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 
-// window.addEventListener("resize", function () {
-//     canvas.width = window.innerWidth;
-//     canvas.height = window.innerHeight;
-//     render();
-// });
+window.addEventListener("resize", function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    render();
+});
 
 function files(index) {
     var data = `${imagesString}`;
@@ -112,7 +112,7 @@ function render() {
 
         if (window.innerWidth < 430) {
             gsap.to('canvas', {
-                left: -150,
+                left: 0,
                 top: 130,
                 scale: .8
             })
@@ -172,9 +172,9 @@ function scaleImage(img, ctx) {
     var hRatio = canvas.width / img.width;
     var vRatio = canvas.height / img.height;
     var ratio = Math.max(hRatio, vRatio);
-    var centerShift_x = (canvas.width - img.width * ratio) / 2;
-    var centerShift_y = (canvas.height - img.height * ratio) / 2;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var centerShift_x = (canvas.width - img.width * ratio) / (window.innerWidth < 430 ? 1.4 : 2);
+    var centerShift_y = (canvas.height - img.height * ratio) / (window.innerWidth < 430 ? 1.4 : 2);
+    ctx.clearRect(0, 0, canvas.width - 1, canvas.height);
     ctx.drawImage(
         img,
         0,
