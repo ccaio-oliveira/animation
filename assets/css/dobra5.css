@@ -130,7 +130,7 @@
         width: 90%;
         font-size: 1.2rem;
         position: relative;
-        top: -200px;
+        top: -48rem;
     }
 
     #knowTech {
@@ -138,18 +138,13 @@
         font-size: 1.0rem;
     }
 
-    #myimg5 {
-        width: 245rem;
-        left: -13rem !important;
+    .modal-container5 {
+        height: 88vh !important;
     }
 
-    .modal-body {
+    .modal-container5 .modal-body {
         overflow-y: auto;
-    }
-
-    .content5 {
-        height: 60dvh;
-        padding-bottom: 50px;
+        height: 77vh;
     }
 
     .paper {
@@ -163,6 +158,6 @@
     }
 
     .paper-right .restPaperRight {
-        height: 27.3rem;
+        height: 27.32rem;
     }
 }

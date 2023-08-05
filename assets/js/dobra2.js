@@ -43,11 +43,11 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 
-window.addEventListener("resize", function () {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    render();
-});
+// window.addEventListener("resize", function () {
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
+//     render();
+// });
 
 function files(index) {
     var data = `${imagesString}`;
@@ -110,6 +110,13 @@ function render() {
             x: -200
         })
 
+        if (window.innerWidth < 430) {
+            gsap.to('canvas', {
+                left: -150,
+                top: 130,
+                scale: .8
+            })
+        }
     } else if (url.includes('dobra-3')) {
         gsap.to('#txt2', 0.1, {
             opacity: 0,
@@ -125,7 +132,13 @@ function render() {
             opacity: 0,
             x: -200
         })
-    } else if (url.includes('dobra-4')){
+
+        if (window.innerWidth < 430) {
+            gsap.to('canvas', {
+                top: 150,
+            })
+        }
+    } else if (url.includes('dobra-4')) {
 
         gsap.to('#txt3', 0.1, {
             opacity: 0,
@@ -141,7 +154,7 @@ function render() {
             opacity: 0,
             x: -200
         })
-    } else if (url.includes('dobra-5')){
+    } else if (url.includes('dobra-5')) {
         gsap.to('#txt4', 0.1, {
             opacity: 0,
             x: -200

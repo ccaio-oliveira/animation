@@ -68,6 +68,10 @@ canvas {
 }
 
 @media (max-width: 4280px){
+    #dobra2 .content {
+        top: 46%;
+    }
+
     #txt2 {
         top: -13rem;
     }
