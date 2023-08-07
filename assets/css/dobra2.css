@@ -67,10 +67,13 @@ canvas {
     }
 }
 
-@media (max-width: 4280px){
-    .image canvas {
+@media (max-width: 430px){
+    .image {
         width: 100%;
+        position: absolute;
+        left: 0rem;
     }
+
     #dobra2 .content {
         top: 46%;
     }

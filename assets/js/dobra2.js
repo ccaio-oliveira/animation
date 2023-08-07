@@ -42,7 +42,6 @@ const context = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-
 window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -110,13 +109,6 @@ function render() {
             x: -200
         })
 
-        if (window.innerWidth < 430) {
-            gsap.to('canvas', {
-                left: 0,
-                top: 130,
-                scale: .8
-            })
-        }
     } else if (url.includes('dobra-3')) {
         gsap.to('#txt2', 0.1, {
             opacity: 0,
@@ -133,11 +125,6 @@ function render() {
             x: -200
         })
 
-        if (window.innerWidth < 430) {
-            gsap.to('canvas', {
-                top: 150,
-            })
-        }
     } else if (url.includes('dobra-4')) {
 
         gsap.to('#txt3', 0.1, {
@@ -172,8 +159,8 @@ function scaleImage(img, ctx) {
     var hRatio = canvas.width / img.width;
     var vRatio = canvas.height / img.height;
     var ratio = Math.max(hRatio, vRatio);
-    var centerShift_x = (canvas.width - img.width * ratio) / (window.innerWidth < 430 ? 1.4 : 2);
-    var centerShift_y = (canvas.height - img.height * ratio) / (window.innerWidth < 430 ? 1.4 : 2);
+    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_y = (canvas.height - img.height * ratio) / 2;
     ctx.clearRect(0, 0, canvas.width - 1, canvas.height);
     ctx.drawImage(
         img,
