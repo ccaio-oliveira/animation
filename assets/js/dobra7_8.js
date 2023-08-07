@@ -81,6 +81,12 @@ gsap.to(imageSeq8, {
                 left: "6%",
             })
 
+            if (window.innerWidth > 430) {
+                gsap.to("#image", 0.2, {
+                    left: 400,
+                })
+            }
+
             gsap.to("#txt81", 0.1, {
                 opacity: 0,
                 right: "-6%",
@@ -101,6 +107,11 @@ gsap.to(imageSeq8, {
                 right: -200,
             })
 
+            if (window.innerWidth > 430) {
+                gsap.to("#image", 0.2, {
+                    left: -550,
+                })
+            }
         } else if (imageSeq8.frame > 99) {
             gsap.to("#txt81", 0.1, {
                 opacity: 0,
