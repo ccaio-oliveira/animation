@@ -71,14 +71,16 @@ canvas {
     .image {
         width: 100%;
         position: absolute;
-        left: 0rem;
+        left: -8rem;
+        top: 28rem;
+        transform: scale(0.7);
     }
 
     #dobra2 .content {
-        top: 46%;
+        top: 30rem;
     }
 
     #txt2 {
-        top: -13rem;
+        top: 0rem;
     }
 }
