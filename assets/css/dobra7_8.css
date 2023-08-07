@@ -162,7 +162,8 @@
 
     #image {
         left: -1rem;
-        top: -57rem;
+        top: -46rem;
+        transform: scale(0.8);
     }
 
     .knowServTech {
