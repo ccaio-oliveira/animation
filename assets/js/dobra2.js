@@ -74,7 +74,7 @@ gsap.to(imageSeq, {
         scrub: 0.15,
         trigger: `#dobra2`,
         //   set start end according to preference
-        start: `top -40%`,
+        start: (window.innerWidth < 430 ? 'top top' : `top -40%`),
         end: `600% top`,
         scroller: `#main`,
     },
@@ -176,11 +176,9 @@ function scaleImage(img, ctx) {
 }
 
 ScrollTrigger.create({
-    trigger: "#dobra2",
+    trigger: '#dobra2',
     pin: true,
-    // markers:true,
-    scroller: `#main`,
-    //   set start end according to preference
-    start: `top -40%`,
-    end: `600% top`,
-});
+    scroller: '#main',
+    start: (window.innerWidth < 430 ? 'top top' : `top -40%`),
+    end: '600% top'
+})

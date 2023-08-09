@@ -84,6 +84,10 @@ gsap.to(imageSeq8, {
                 gsap.to("#image", 0.2, {
                     left: 400,
                 })
+            } else {
+                gsap.to('#txt82', {
+                    display: 'none'
+                })
             }
 
             gsap.to("#txt81", 0.1, {
@@ -120,6 +124,7 @@ gsap.to(imageSeq8, {
 
             gsap.to("#txt82", 0.1, {
                 opacity: 1,
+                display: 'initial'
             })
         }
     },

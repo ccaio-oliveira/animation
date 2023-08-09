@@ -104,12 +104,21 @@
 
 @media (max-width: 428px){
     #dobra1 .content {
-        width: 70%;
-        left: 15%;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #dobra1 .content .text {
         font-size: 1.0rem;
+    }
+
+    .scroll-down {
+        top: -35rem;
     }
 
     .social-media {

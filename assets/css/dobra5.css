@@ -165,8 +165,9 @@
     #txt5 {
         width: 90%;
         font-size: 1.2rem;
-        position: relative;
-        top: -43rem;
+        position: absolute;
+        top: 10rem;
+        left: 7%;
     }
 
     #knowTech5 {

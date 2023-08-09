@@ -9,8 +9,9 @@
     #txt3 {
         width: 90%;
         font-size: 1.1rem;
-        top: -15rem;
-        position: relative;
+        top: 9rem;
+        left: 7%;
+        position: absolute;
     }
 
     #txt3:first-child{

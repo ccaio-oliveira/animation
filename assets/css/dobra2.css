@@ -4,7 +4,7 @@
     width: 100vw;
 }
 
-#dobra2 .content {
+#dobra2 .content2 {
     position: absolute;
     z-index: 1;
     left: 6%;
@@ -70,17 +70,23 @@ canvas {
 @media (max-width: 430px){
     .image {
         width: 100%;
-        position: absolute;
         left: -8rem;
-        top: 28rem;
-        transform: scale(0.7);
+        top: 24rem;
+        transform: scale(0.75);
     }
 
-    #dobra2 .content {
-        top: 30rem;
+    #dobra2 .content2 {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
     }
 
     #txt2 {
-        top: 0rem;
+        position: absolute;
+        top: 11rem;
+        left: 7%;
+        width: 90%;
+        font-size: 1.2rem;
     }
 }
