@@ -89,8 +89,9 @@ gsap.to(imageSeq8, {
 
             gsap.to("#txt81", 0.1, {
                 opacity: 0,
-                right: "-6%",
+                right: "100%",
             })
+
         } else if (imageSeq8.frame > 49 && imageSeq8.frame < 100) {
             gsap.to("#txt7", 0.1, {
                 opacity: 0,
