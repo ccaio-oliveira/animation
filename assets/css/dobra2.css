@@ -71,8 +71,9 @@ canvas {
     .image {
         width: 100%;
         left: -8rem;
-        top: 24rem;
+        top: 3rem;
         transform: scale(0.75);
+        position: absolute;
     }
 
     #dobra2 .content2 {
