@@ -13,7 +13,7 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     1000
 )
-camera.position.z = 0
+camera.position.z = 0;
 
 scene.background = new THREE.Color(0x0e141c)
 
@@ -36,7 +36,6 @@ const material = new THREE.MeshStandardMaterial()
 const textureLoader = new THREE.TextureLoader()
 const texture = textureLoader.load("assets/static/dobra-8/Dobra7_8.png")
 material.map = texture
-// material.color.set(0x0E141C);
 
 const mesh = new THREE.Mesh(geometry, material)
 mesh.position.x = 0

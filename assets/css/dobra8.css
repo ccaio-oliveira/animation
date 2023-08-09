@@ -18,7 +18,7 @@
 }
 
 #modal8 {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(243, 243, 243, 0.2);
     position: fixed;
     top: 50%;
     left: 100%;
@@ -27,6 +27,8 @@
     z-index: 100;
     width: 100vw;
     height: 3vh;
+
+    backdrop-filter: blur(10px);
 }
 
 .modal-content8 {
@@ -35,8 +37,8 @@
     height: 15rem;
     width: 22rem;
     border-radius: 10px 20px 0px 30px;
-    top: 20%;
-    left: 25%;
+    top: 30%;
+    left: 35%;
 
     opacity: 0;
 }
