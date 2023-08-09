@@ -1,28 +1,28 @@
-const texts7 = document.querySelectorAll('.modalText7');
-const containerText7 = document.querySelector('.texts7');
-const counter7 = document.querySelector('.numCount7');
-const btnNext7 = document.querySelector('#next7');
-const btnBack7 = document.querySelector('#back7');
-const openModal7 = document.querySelector('#btnModal7');
+const texts8 = document.querySelectorAll('.modalText8');
+const containerText8 = document.querySelector('.texts8');
+const counter8 = document.querySelector('.numCount8');
+const btnNext8 = document.querySelector('#next8');
+const btnBack8 = document.querySelector('#back8');
+const openModal8 = document.querySelector('#btnModal8');
 
-openModal7.onclick = () => {
-    gsap.to('#modal7', {
+openModal8.onclick = () => {
+    gsap.to('#modal8', {
         left: 0,
         duration: 1.0,
         display: 'block',
         onComplete: function(){
-            gsap.to('#modal7', {
+            gsap.to('#modal8', {
                 duration: 1.0,
                 height: '100vh',
                 top: 0,
                 onComplete: function () {
-                    gsap.to('.modal-content7', {
+                    gsap.to('.modal-content8', {
                         opacity: 1,
                         onComplete: function(){
-                            gsap.to('.modal-body7', {
+                            gsap.to('.modal-body8', {
                                 opacity: 1,
                                 onComplete: function(){
-                                    gsap.to('.modal-header7', {
+                                    gsap.to('.modal-header8', {
                                         duration: 0.5,
                                         opacity: 1,
                                     })
@@ -36,46 +36,46 @@ openModal7.onclick = () => {
     })
 }
 
-let numCounter7 = parseInt(counter7.innerHTML);
+let numCounter8 = parseInt(counter8.innerHTML);
 
-containerText7.innerHTML = texts7[numCounter7 - 1].innerHTML;
+containerText8.innerHTML = texts8[numCounter8 - 1].innerHTML;
 
-btnNext7.onclick = () => {
-    if(numCounter7 <= 7){
-        numCounter7 += 1;
+btnNext8.onclick = () => {
+    if(numCounter8 <= 20){
+        numCounter8 += 1;
     }
 
-    containerText7.innerHTML = texts7[numCounter7 - 1].innerHTML;
-    counter7.innerHTML = numCounter7;
+    containerText8.innerHTML = texts8[numCounter8 - 1].innerHTML;
+    counter8.innerHTML = numCounter8;
 }
 
-btnBack7.onclick = () => {
-    if(numCounter7 > 1){
-        numCounter7 -= 1;
+btnBack8.onclick = () => {
+    if(numCounter8 > 1){
+        numCounter8 -= 1;
     }
 
-    containerText7.innerHTML = texts7[numCounter7 - 1].innerHTML;
-    counter7.innerHTML = numCounter7;
+    containerText8.innerHTML = texts8[numCounter8 - 1].innerHTML;
+    counter8.innerHTML = numCounter8;
 }
 
-const btnClose7 = document.querySelector('.btnClose7');
-btnClose7.onclick = () => {
-    gsap.to('.modal-header7', {
+const btnClose8 = document.querySelector('.btnClose8');
+btnClose8.onclick = () => {
+    gsap.to('.modal-header8', {
         duration: 0.5,
         opacity: 0,
         onComplete: function(){
-            gsap.to('.modal-body7', {
+            gsap.to('.modal-body8', {
                 opacity: 0,
                 onComplete: function(){
-                    gsap.to('.modal-content7', {
+                    gsap.to('.modal-content8', {
                         opacity: 0,
                         onComplete: function(){
-                            gsap.to('#modal7', {
+                            gsap.to('#modal8', {
                                 duration: 1.0,
                                 height: 10,
                                 top: '50%',
                                 onComplete: function () {
-                                    gsap.to('#modal7', {
+                                    gsap.to('#modal8', {
                                         left: '100%',
                                         duration: 1.0,
                                         display: 'none'
@@ -89,5 +89,3 @@ btnClose7.onclick = () => {
         }
     })
 }
-
-console.log(texts7);
