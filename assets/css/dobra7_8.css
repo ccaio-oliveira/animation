@@ -145,8 +145,9 @@
     }
 
     #image {
+        position: absolute;
         left: -1rem;
-        top: -46rem;
+        top: -2rem;
         transform: scale(0.8);
     }
 

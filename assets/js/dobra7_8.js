@@ -4,6 +4,7 @@ ScrollTrigger.create({
     scroller: "#main",
     start: "top top",
     end: "300% top",
+    markers: true
 })
 
 const scene = new THREE.Scene()
