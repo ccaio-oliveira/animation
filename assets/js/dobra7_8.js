@@ -1,9 +1,11 @@
-ScrollTrigger.create({
-    trigger: "#dobra7_8",
-    pin: true,
-    scroller: "#main",
-    start: "top top",
-    end: "300% top",
+gsap.to('#pin7', {
+    scrollTrigger: {
+        trigger: "#dobra7_8",
+        pin: true,
+        scroller: "#main",
+        start: "top top",
+        end: "300% top",
+    }
 })
 
 const scene = new THREE.Scene()

@@ -1,16 +1,16 @@
 #txt81,
 #txt82 {
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 40%;
-    top: 6rem;
+    top: 17rem;
     left: 50%;
     font-size: 1.2rem;
     color: #fff;
 }
 
 #txt82 {
-    top: -2rem;
+    top: 14rem;
 }
 
 #txt82 p:nth-child(2) {

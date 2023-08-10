@@ -1,10 +1,11 @@
 const btnScrollSec2 = document.querySelector('.scroll-down');
 
-ScrollTrigger.create({
-    trigger: "#dobra1",
-    pin: true,
-    scroller: `#main`,
-    //   set start end according to preference
-    start: `top top`,
-    end: `20% top`,
-});
+gsap.to('#pin1', {
+    scrollTrigger: {
+        trigger: '#dobra1',
+        pin: true,
+        scroller: '#main',
+        start: 'top top',
+        end: '20% top'
+    }
+})

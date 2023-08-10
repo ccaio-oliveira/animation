@@ -18,7 +18,7 @@ gsap.to('#imgLogo', {
     scrollTrigger: {
         trigger: dobra3,
         start: `+599% top `,
-        end: `1199% top`,
+        end: `1180% top`,
         scroller: `#main`,
         onEnter: function() {
             imgLogo.src = 'assets/static/logo/logo-white.png'

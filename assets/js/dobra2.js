@@ -195,10 +195,12 @@ function scaleImage(img, ctx) {
     );
 }
 
-ScrollTrigger.create({
-    trigger: '#dobra2',
-    pin: true,
-    scroller: '#main',
-    start: (window.innerWidth < 430 ? 'top top' : `top -40%`),
-    end: '600% top'
+gsap.to('#pin2', {
+    scrollTrigger: {
+        trigger: '#dobra2',
+        pin: true,
+        scroller: '#main',
+        start: (window.innerWidth < 430 ? 'top top' : 'top -40%'),
+        end: '600% top'
+    }
 })
