@@ -1,5 +1,5 @@
 const circles = document.querySelectorAll(".circle")
-const mainEL = document.getElementById("main")
+const mainEl = document.getElementById("main")
 
 document.addEventListener("DOMContentLoaded", () => {
   circles.forEach(circle => {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let scrollY = 0
 
-document.addEventListener("wheel", event => {
+mainEl.addEventListener("wheel", event => {
   scrollY += event.deltaY
 
   if (scrollY < 0) {
