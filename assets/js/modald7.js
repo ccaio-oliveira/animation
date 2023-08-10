@@ -89,5 +89,3 @@ btnClose7.onclick = () => {
         }
     })
 }
-
-console.log(texts7);

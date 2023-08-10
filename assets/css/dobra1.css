@@ -1,6 +1,7 @@
 #dobra1 {
+    position: relative;
     z-index: 1;
-    height: 100vh !important;
+    height: 120vh !important;
 }
 
 #dobra1 .image {
@@ -102,7 +103,7 @@
     }
 }
 
-@media (max-width: 428px){
+@media (max-width: 430px) {
     #dobra1 .content {
         width: 100vw;
         height: 100vh;
@@ -118,7 +119,7 @@
     }
 
     .scroll-down {
-        top: -35rem;
+        top: -0rem;
     }
 
     .social-media {
@@ -133,5 +134,10 @@
 
     .mouse::before {
         bottom: 17px;
+    }
+
+    #dobra1 .social-media {
+        top: 45rem;
+        height: fit-content;
     }
 }

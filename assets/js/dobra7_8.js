@@ -124,7 +124,7 @@ gsap.to(imageSeq8, {
 
             gsap.to("#txt82", 0.1, {
                 opacity: 1,
-                display: 'initial'
+                display: 'block'
             })
         }
     },
