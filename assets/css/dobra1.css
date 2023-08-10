@@ -1,6 +1,7 @@
 #dobra1 {
+    position: relative;
     z-index: 1;
-    height: 100vh !important;
+    height: 120vh !important;
 }
 
 #dobra1 .image {
@@ -102,14 +103,23 @@
     }
 }
 
-@media (max-width: 428px){
+@media (max-width: 430px) {
     #dobra1 .content {
-        width: 70%;
-        left: 15%;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #dobra1 .content .text {
         font-size: 1.0rem;
+    }
+
+    .scroll-down {
+        top: -0rem;
     }
 
     .social-media {
@@ -124,5 +134,10 @@
 
     .mouse::before {
         bottom: 17px;
+    }
+
+    #dobra1 .social-media {
+        top: 45rem;
+        height: fit-content;
     }
 }

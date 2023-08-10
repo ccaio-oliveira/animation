@@ -42,7 +42,6 @@ const context = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-
 window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -75,7 +74,7 @@ gsap.to(imageSeq, {
         scrub: 0.15,
         trigger: `#dobra2`,
         //   set start end according to preference
-        start: `top -40%`,
+        start: (window.innerWidth < 430 ? 'top top' : `top -40%`),
         end: `600% top`,
         scroller: `#main`,
     },
@@ -110,13 +109,6 @@ function render() {
             x: -200
         })
 
-        if (window.innerWidth < 430) {
-            gsap.to('canvas', {
-                left: 0,
-                top: 130,
-                scale: .8
-            })
-        }
     } else if (url.includes('dobra-3')) {
         gsap.to('#txt2', 0.1, {
             opacity: 0,
@@ -133,12 +125,17 @@ function render() {
             x: -200
         })
 
-        if (window.innerWidth < 430) {
-            gsap.to('canvas', {
-                top: 150,
-            })
-        }
+        gsap.to('#txt5', 0.1, {
+            opacity: 0,
+            x: -200
+        })
+
     } else if (url.includes('dobra-4')) {
+
+        gsap.to('#txt2', 0.1, {
+            opacity: 0,
+            x: -200
+        })
 
         gsap.to('#txt3', 0.1, {
             opacity: 0,
@@ -155,6 +152,16 @@ function render() {
             x: -200
         })
     } else if (url.includes('dobra-5')) {
+        gsap.to('#txt2', 0.1, {
+            opacity: 0,
+            x: -200
+        })
+
+        gsap.to('#txt3', 0.1, {
+            opacity: 0,
+            x: -200
+        })
+
         gsap.to('#txt4', 0.1, {
             opacity: 0,
             x: -200
@@ -172,8 +179,8 @@ function scaleImage(img, ctx) {
     var hRatio = canvas.width / img.width;
     var vRatio = canvas.height / img.height;
     var ratio = Math.max(hRatio, vRatio);
-    var centerShift_x = (canvas.width - img.width * ratio) / (window.innerWidth < 430 ? 1.4 : 2);
-    var centerShift_y = (canvas.height - img.height * ratio) / (window.innerWidth < 430 ? 1.4 : 2);
+    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_y = (canvas.height - img.height * ratio) / 2;
     ctx.clearRect(0, 0, canvas.width - 1, canvas.height);
     ctx.drawImage(
         img,
@@ -189,11 +196,9 @@ function scaleImage(img, ctx) {
 }
 
 ScrollTrigger.create({
-    trigger: "#dobra2",
+    trigger: '#dobra2',
     pin: true,
-    // markers:true,
-    scroller: `#main`,
-    //   set start end according to preference
-    start: `top -40%`,
-    end: `600% top`,
-});
+    scroller: '#main',
+    start: (window.innerWidth < 430 ? 'top top' : `top -40%`),
+    end: '600% top'
+})

@@ -7,10 +7,11 @@
 
 @media (max-width: 428px){
     #txt4 {
-        position: relative;
+        position: absolute;
         width: 90%;
         font-size: 1.2rem;
-        top: -42rem;
+        top: 10rem;
+        left: 7%;
     }
 
     #myimg4 {
