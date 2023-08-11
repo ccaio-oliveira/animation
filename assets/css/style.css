@@ -46,6 +46,11 @@ a {
     z-index: 9999;
 }
 
+.loading-screen h2 {
+    position: absolute;
+    top: 40rem;
+}
+
 #imgLoad {
     width: 200px;
     position: relative;
@@ -112,5 +117,12 @@ a {
 
     #main {
         overflow-y: scroll;
+    }
+
+    .loading-screen h2 {
+        top: 35rem;
+        font-size: 1.0rem;
+        width: 15rem;
+        text-align: center;
     }
 }
