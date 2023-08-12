@@ -1,0 +1,25 @@
+#txt3 {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 428px){
+    #txt3 {
+        width: 90%;
+        font-size: 1.1rem;
+        top: 9rem;
+        left: 7%;
+        position: absolute;
+    }
+
+    #txt3:first-child{
+        padding-bottom: 10px;
+    }
+
+    #myimg3 {
+        width: 245rem;
+        left: -13rem !important;
+    }
+}

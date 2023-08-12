@@ -1,0 +1,21 @@
+#txt4 {
+    position: absolute;
+    top: 10%;
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 428px){
+    #txt4 {
+        position: absolute;
+        width: 90%;
+        font-size: 1.2rem;
+        top: 10rem;
+        left: 7%;
+    }
+
+    #myimg4 {
+        width: 245rem;
+        left: -13rem !important;
+    }
+}

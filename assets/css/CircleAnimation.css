@@ -1,0 +1,392 @@
+/* === BASE === */
+.circle_animation_container {
+  position: absolute;
+  inset: 0;
+  transform: scale(0.8);
+}
+
+.circle_animation_container .circle {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+
+  border: 2px solid;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.circle_animation_container .circle .inner_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.circle_animation_container .circle .inner_container .square {
+  height: .75rem;
+  width: .75rem;
+  border-radius: 2px;
+
+  position: absolute;
+  z-index: 10;
+  margin: auto;
+}
+
+.circle_animation_container .circle .inner_container .square.blue {
+  background-color: rgb(33, 33, 247);
+}
+
+.circle_animation_container .circle .inner_container .square.grey {
+  background-color: rgb(59, 59, 132); 
+}
+
+.circle1 {
+  border-color: rgba(128, 128, 128, .4);
+}
+.circle1.isBlack {
+  border-color: rgba(153, 153, 153, .4);
+}
+
+.circle2 {
+  border-color: rgba(128, 128, 128, .6);
+}
+.circle2.isBlack {
+  border-color: rgba(153, 153, 153, .6);
+}
+
+.circle3 {
+  border-color: rgba(128, 128, 128, .8);
+}
+.circle3.isBlack {
+  border-color: rgba(153, 153, 153, .8);
+}
+
+.circle4 {
+  border-color: rgba(128, 128, 128, 1);
+}
+.circle4.isBlack {
+  border-color: rgba(153, 153, 153, 1);
+}
+
+.square1, .square2, .square3, .square4 {
+  rotate: 45deg;
+}
+
+@media (min-width: 1025px) {
+  /* === CIRCLE === */
+  .circle1 {
+    height: 600px;
+    width: 600px;
+  }
+  
+  .circle2 {
+    height: 640px;
+    width: 640px;
+  }
+  
+  .circle3 {
+    height: 680px;
+    width: 680px;
+  }
+  
+  .circle4 {
+    height: 720px;
+    width: 720px;
+  }
+  
+  /* === SQUARES === */
+  .square1 {
+    top: 300px;
+    right: 0px;
+    bottom: -300px;
+    left: 0px;
+  }
+  
+  .square2 {
+    top: -300px;
+    right: 0;
+    bottom: 300px;
+    left: 0;
+  }
+  
+  .square3 {
+    top: 0;
+    right: -320px;
+    bottom: 0;
+    left: 320px;
+  }
+  
+  .square4 {
+    top: 0;
+    right: 320px;
+    bottom: 0;
+    left: -320px;
+  }
+  
+  .square5 {
+    top: 242px;
+    right: -240px;
+    bottom: -242px;
+    left: 240px;
+  }
+  
+  .square6 {
+    top: -242px;
+    right: 240px;
+    bottom: 242px;
+    left: -240px;
+  }
+  
+  .square7 {
+    top: 255px;
+    right: 255px;
+    bottom: -255px;
+    left: -255px;
+  }
+  
+  .square8 {
+    top: -255px;
+    right: -255px;
+    bottom: 255px;
+    left: 255px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* === CIRCLE === */
+  .circle1 {
+    height: calc(600px * 0.95);
+    width: calc(600px * 0.95);
+  }
+  
+  .circle2 {
+    height: calc(640px * 0.95);
+    width: calc(640px * 0.95);
+  }
+  
+  .circle3 {
+    height: calc(680px * 0.95);
+    width: calc(680px * 0.95);
+  }
+  
+  .circle4 {
+    height: calc(720px * 0.95);
+    width: calc(720px * 0.95);
+  }
+  
+  /* === SQUARES === */
+  .square1 {
+    top: calc(300px * 0.95);
+    right: 0px;
+    bottom: calc(-300px * 0.95);
+    left: 0px;
+  }
+  
+  .square2 {
+    top: calc(-300px * 0.95);
+    right: 0px;
+    bottom: calc(300px * 0.95);
+    left: 0px;
+  }
+  
+  .square3 {
+    top: 0px;
+    right: calc(-320px * 0.95);
+    bottom: 0px;
+    left: calc(320px * 0.95);
+  }
+  
+  .square4 {
+    top: 0px;
+    right: calc(320px * 0.95);
+    bottom: 0px;
+    left: calc(-320px * 0.95);
+  }
+  
+  .square5 {
+    top: calc(242px * 0.95);
+    right: calc(-240px * 0.95);
+    bottom: calc(-242px * 0.95);
+    left: calc(240px * 0.95);
+  }
+  
+  .square6 {
+    top: calc(-242px * 0.95);
+    right: calc(240px * 0.95);
+    bottom: calc(242px * 0.95);
+    left: calc(-240px * 0.95);
+  }
+  
+  .square7 {
+    top: calc(255px * 0.95);
+    right: calc(255px * 0.95);
+    bottom: calc(-255px * 0.95);
+    left: calc(-255px * 0.95);
+  }
+  
+  .square8 {
+    top: calc(-255px * 0.95);
+    right: calc(-255px * 0.95);
+    bottom: calc(255px * 0.95);
+    left: calc(255px * 0.95);
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  /* === CIRCLE === */
+  .circle1 {
+    height: calc(600px * 0.8);
+    width: calc(600px * 0.8);
+  }
+  
+  .circle2 {
+    height: calc(640px * 0.8);
+    width: calc(640px * 0.8);
+  }
+  
+  .circle3 {
+    height: calc(680px * 0.8);
+    width: calc(680px * 0.8);
+  }
+  
+  .circle4 {
+    height: calc(720px * 0.8);
+    width: calc(720px * 0.8);
+  }
+  
+  /* === SQUARES === */
+  .square1 {
+    top: calc(300px * 0.8);
+    right: 0px;
+    bottom: calc(-300px * 0.8);
+    left: 0px;
+  }
+  
+  .square2 {
+    top: calc(-300px * 0.8);
+    right: 0px;
+    bottom: calc(300px * 0.8);
+    left: 0px;
+  }
+  
+  .square3 {
+    top: 0px;
+    right: calc(-320px * 0.8);
+    bottom: 0px;
+    left: calc(320px * 0.8);
+  }
+  
+  .square4 {
+    top: 0px;
+    right: calc(320px * 0.8);
+    bottom: 0px;
+    left: calc(-320px * 0.8);
+  }
+  
+  .square5 {
+    top: calc(242px * 0.8);
+    right: calc(-240px * 0.8);
+    bottom: calc(-242px * 0.8);
+    left: calc(240px * 0.8);
+  }
+  
+  .square6 {
+    top: calc(-242px * 0.8);
+    right: calc(240px * 0.8);
+    bottom: calc(242px * 0.8);
+    left: calc(-240px * 0.8);
+  }
+  
+  .square7 {
+    top: calc(255px * 0.8);
+    right: calc(255px * 0.8);
+    bottom: calc(-255px * 0.8);
+    left: calc(-255px * 0.8);
+  }
+  
+  .square8 {
+    top: calc(-255px * 0.8);
+    right: calc(-255px * 0.8);
+    bottom: calc(255px * 0.8);
+    left: calc(255px * 0.8);
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px){
+  /* === CIRCLE === */
+  .circle1 {
+    height: calc(600px * 0.6);
+    width: calc(600px * 0.6);
+  }
+  
+  .circle2 {
+    height: calc(640px * 0.6);
+    width: calc(640px * 0.6);
+  }
+  
+  .circle3 {
+    height: calc(680px * 0.6);
+    width: calc(680px * 0.6);
+  }
+  
+  .circle4 {
+    height: calc(720px * 0.6);
+    width: calc(720px * 0.6);
+  }
+  
+  /* === SQUARES === */
+  .square1 {
+    top: calc(300px * 0.6);
+    right: 0px;
+    bottom: calc(-300px * 0.6);
+    left: 0px;
+  }
+  
+  .square2 {
+    top: calc(-300px * 0.6);
+    right: 0px;
+    bottom: calc(300px * 0.6);
+    left: 0px;
+  }
+  
+  .square3 {
+    top: 0px;
+    right: calc(-320px * 0.6);
+    bottom: 0px;
+    left: calc(320px * 0.6);
+  }
+  
+  .square4 {
+    top: 0px;
+    right: calc(320px * 0.6);
+    bottom: 0px;
+    left: calc(-320px * 0.6);
+  }
+  
+  .square5 {
+    top: calc(242px * 0.6);
+    right: calc(-240px * 0.6);
+    bottom: calc(-242px * 0.6);
+    left: calc(240px * 0.6);
+  }
+  
+  .square6 {
+    top: calc(-242px * 0.6);
+    right: calc(240px * 0.6);
+    bottom: calc(242px * 0.6);
+    left: calc(-240px * 0.6);
+  }
+  
+  .square7 {
+    top: calc(255px * 0.6);
+    right: calc(255px * 0.6);
+    bottom: calc(-255px * 0.6);
+    left: calc(-255px * 0.6);
+  }
+  
+  .square8 {
+    top: calc(-255px * 0.6);
+    right: calc(-255px * 0.6);
+    bottom: calc(255px * 0.6);
+    left: calc(255px * 0.6);
+  }
+}

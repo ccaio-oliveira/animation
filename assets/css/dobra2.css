@@ -1,0 +1,57 @@
+/* dobra 2 */
+#dobra2 {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+}
+
+#dobra2 .content2 {
+    position: absolute;
+    z-index: 1;
+    left: 6%;
+    top: 30rem;
+}
+
+canvas {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    left: 8%;
+    top: 15rem;
+}
+
+#txt2 {
+    width: 39%;
+    font-size: 1.5rem;
+}
+
+#myimg2 {
+    position: relative;
+    right: -13rem;
+}
+
+@media (max-width: 430px){
+    .image {
+        width: 100%;
+        left: -8rem;
+        top: -3rem;
+        transform: scale(0.75);
+        position: absolute;
+    }
+
+    #dobra2 .content2 {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #txt2 {
+        position: absolute;
+        top: 11rem;
+        left: 7%;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+}

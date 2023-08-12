@@ -1,0 +1,70 @@
+#dobra9 {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+}
+
+#dobra9 .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#dobra9 .content .text {
+    font-size: 1.2rem;
+}
+
+#dobra9 .social-media {
+    position: absolute;
+    bottom: 4%;
+    right: 6%;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F3F3;
+    padding: 10px;
+    box-shadow: 0.996094px 3.98438px 10.957px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+#dobra9 .knowServTech {
+    width: 200px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 1.0rem;
+}
+
+@media (max-width: 428px){
+
+    #dobra9 {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+
+    #dobra9 .content {
+        width: 100%;
+        top: 0%;
+        left: 0%;
+
+        font-size: 0.9rem;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #dobra9 .knowServTech {
+        width: 150px;
+        font-size: 0.9rem;
+        margin-top: 50px;
+    }
+}

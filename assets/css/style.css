@@ -1,0 +1,132 @@
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indivisible', 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100svh;
+    width: 100%;
+    background: #F3F3F3;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    overflow-x: hidden;
+}
+
+.content .text p:first-child {
+    margin-bottom: 30px;
+}
+
+#txt2,
+#txt3,
+#txt4,
+#txt5,
+#txt61,
+#txt62,
+#txt7,
+#txt81,
+#txt82 {
+    opacity: 0;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loading-screen h2 {
+    position: absolute;
+    top: 40rem;
+}
+
+#imgLoad {
+    width: 200px;
+    position: relative;
+    /* top: -100%; */
+    left: -10%;
+    z-index: 999999;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* scrollbar  */
+/* Para navegadores baseados em WebKit, como Chrome e Safari */
+::-webkit-scrollbar {
+    background-color: #f1f1f1;
+    width: 5px;
+}
+
+/* Para navegadores baseados em Mozilla, como Firefox */
+::-moz-scrollbar {
+    background-color: #f1f1f1;
+    width: 5px;
+}
+
+/* Para navegadores baseados em WebKit, como Chrome e Safari */
+::-webkit-scrollbar-thumb {
+    background-color: #141D27;
+}
+
+/* Para navegadores baseados em Mozilla, como Firefox */
+::-moz-scrollbar-thumb {
+    background-color: #141D27;
+}
+
+/* Para navegadores baseados em WebKit, como Chrome e Safari */
+::-webkit-scrollbar-thumb {
+    background-color: #141D27;
+    min-height: 20px;
+    /* altura mínima */
+}
+
+/* Para navegadores baseados em Mozilla, como Firefox */
+::-moz-scrollbar-thumb {
+    background-color: #141D27;
+    min-height: 20px;
+    /* altura mínima */
+}
+
+@media (max-width: 430px) {
+
+    html,
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #main {
+        overflow-y: scroll;
+    }
+
+    .loading-screen h2 {
+        top: 35rem;
+        font-size: 1.0rem;
+        width: 15rem;
+        text-align: center;
+    }
+}
