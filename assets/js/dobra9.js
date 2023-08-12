@@ -1,5 +1,5 @@
 gsap.to('#pin9', {
-    ScrollTrigger: {
+    scrollTrigger: {
         trigger: "#dobra9",
         pin: true,
         // markers:true,

@@ -10,7 +10,7 @@
     position: absolute;
     z-index: 1;
     left: 6%;
-    top: 55%;
+    top: 30rem;
 }
 
 canvas {
@@ -18,7 +18,7 @@ canvas {
     width: 100vw;
     position: relative;
     left: 8%;
-    top: 7rem;
+    top: 15rem;
 }
 
 #txt2 {
@@ -35,7 +35,7 @@ canvas {
     .image {
         width: 100%;
         left: -8rem;
-        top: 3rem;
+        top: -3rem;
         transform: scale(0.75);
         position: absolute;
     }

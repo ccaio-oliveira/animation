@@ -11,8 +11,8 @@
     height: 100vh;
     position: absolute;
     z-index: 1;
-    top: -7rem;
-    left: 380px;
+    top: -15rem;
+    left: 300px;
 }
 
 #txt7 {
@@ -149,7 +149,7 @@
     #image {
         position: absolute;
         left: -1rem;
-        top: -2rem;
+        top: -10rem;
         transform: scale(0.8);
     }
 

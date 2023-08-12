@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+#main {
+    overflow-x: hidden;
+}
+
 .content .text p:first-child {
     margin-bottom: 30px;
 }

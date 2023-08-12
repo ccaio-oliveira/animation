@@ -17,9 +17,10 @@ const dobra3 = document.querySelector('#dobra3')
 gsap.to('#imgLogo', {
     scrollTrigger: {
         trigger: dobra3,
-        start: `+599% top `,
-        end: `1180% top`,
+        start: `+499% top `,
+        end: `1100% top`,
         scroller: `#main`,
+        markers: true,
         onEnter: function() {
             imgLogo.src = 'assets/static/logo/logo-white.png'
             gsap.to('.btn-contato', {

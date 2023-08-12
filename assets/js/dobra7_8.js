@@ -72,7 +72,7 @@ gsap.to(imageSeq8, {
         trigger: `#dobra7_8`,
         //   set start end according to preference
         start: `top top`,
-        end: `300% top`,
+        end: `320% top`,
         scroller: `#main`,
     },
     onUpdate: function () {
@@ -84,7 +84,7 @@ gsap.to(imageSeq8, {
 
             if (window.innerWidth > 430) {
                 gsap.to("#image", 0.2, {
-                    left: 400,
+                    left: 300,
                 })
             } else {
                 gsap.to('#txt82', {

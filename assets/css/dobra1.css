@@ -1,7 +1,8 @@
 #dobra1 {
     position: relative;
     z-index: 1;
-    height: 120vh !important;
+    width: 100vw;
+    height: 100vh !important;
 }
 
 #dobra1 .image {
@@ -31,7 +32,7 @@
 }
 
 /* style social media */
-.social-media {
+#dobra1 .social-media {
     position: absolute;
     bottom: 5%;
     right: 6%;
