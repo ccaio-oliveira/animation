@@ -231,7 +231,7 @@
   }
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
+@media (max-width: 768px) and (min-width: 577px) {
   /* === CIRCLE === */
   .circle1 {
     height: calc(600px * 0.8);
@@ -311,82 +311,82 @@
   }
 }
 
-@media (max-width: 480px) and (min-width: 320px){
+@media (max-width: 576px) and (min-width: 320px){
   /* === CIRCLE === */
   .circle1 {
-    height: calc(600px * 0.6);
-    width: calc(600px * 0.6);
+    height: calc(600px * 0.55);
+    width: calc(600px * 0.55);
   }
   
   .circle2 {
-    height: calc(640px * 0.6);
-    width: calc(640px * 0.6);
+    height: calc(640px * 0.55);
+    width: calc(640px * 0.55);
   }
   
   .circle3 {
-    height: calc(680px * 0.6);
-    width: calc(680px * 0.6);
+    height: calc(680px * 0.55);
+    width: calc(680px * 0.55);
   }
   
   .circle4 {
-    height: calc(720px * 0.6);
-    width: calc(720px * 0.6);
+    height: calc(720px * 0.55);
+    width: calc(720px * 0.55);
   }
   
   /* === SQUARES === */
   .square1 {
-    top: calc(300px * 0.6);
+    top: calc(300px * 0.55);
     right: 0px;
-    bottom: calc(-300px * 0.6);
+    bottom: calc(-300px * 0.55);
     left: 0px;
   }
   
   .square2 {
-    top: calc(-300px * 0.6);
+    top: calc(-300px * 0.55);
     right: 0px;
-    bottom: calc(300px * 0.6);
+    bottom: calc(300px * 0.55);
     left: 0px;
   }
   
   .square3 {
     top: 0px;
-    right: calc(-320px * 0.6);
+    right: calc(-320px * 0.55);
     bottom: 0px;
-    left: calc(320px * 0.6);
+    left: calc(320px * 0.55);
   }
   
   .square4 {
     top: 0px;
-    right: calc(320px * 0.6);
+    right: calc(320px * 0.55);
     bottom: 0px;
-    left: calc(-320px * 0.6);
+    left: calc(-320px * 0.55);
   }
   
   .square5 {
-    top: calc(242px * 0.6);
-    right: calc(-240px * 0.6);
-    bottom: calc(-242px * 0.6);
-    left: calc(240px * 0.6);
+    top: calc(242px * 0.55);
+    right: calc(-240px * 0.55);
+    bottom: calc(-242px * 0.55);
+    left: calc(240px * 0.55);
   }
   
   .square6 {
-    top: calc(-242px * 0.6);
-    right: calc(240px * 0.6);
-    bottom: calc(242px * 0.6);
-    left: calc(-240px * 0.6);
+    top: calc(-242px * 0.55);
+    right: calc(240px * 0.55);
+    bottom: calc(242px * 0.55);
+    left: calc(-240px * 0.55);
   }
   
   .square7 {
-    top: calc(255px * 0.6);
-    right: calc(255px * 0.6);
-    bottom: calc(-255px * 0.6);
-    left: calc(-255px * 0.6);
+    top: calc(255px * 0.55);
+    right: calc(255px * 0.55);
+    bottom: calc(-255px * 0.55);
+    left: calc(-255px * 0.55);
   }
   
   .square8 {
-    top: calc(-255px * 0.6);
-    right: calc(-255px * 0.6);
-    bottom: calc(255px * 0.6);
-    left: calc(255px * 0.6);
+    top: calc(-255px * 0.55);
+    right: calc(-255px * 0.55);
+    bottom: calc(255px * 0.55);
+    left: calc(255px * 0.55);
   }
 }

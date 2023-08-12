@@ -1,14 +1,24 @@
 const circles = document.querySelectorAll(".circle")
-
-document.addEventListener("DOMContentLoaded", () => {
-  circles.forEach(circle => {
-    circle.style.opacity = 0
-  })
-})
+const bodyEl = document.querySelector("body")
 
 let scrollY = 0
 
-document.addEventListener("scroll", event => {
+const observerCallback = () => {
+  const isLargeScreen = window.matchMedia("(min-width: 576px)").matches
+
+  if (isLargeScreen) {
+    document.removeEventListener("scroll", event => handleSmallScreen(event))
+    document.addEventListener("wheel", event => handleLargeScreen(event))
+  } else {
+    document.removeEventListener("wheel", event => handleLargeScreen(event))
+    document.addEventListener("scroll", event => handleSmallScreen(event))
+  }
+}
+
+const observer = new MutationObserver(observerCallback)
+observer.observe(bodyEl, { attributes: true })
+
+function handleLargeScreen(event) {
   scrollY += event.deltaY
 
   if (scrollY < 0) {
@@ -30,6 +40,34 @@ document.addEventListener("scroll", event => {
       circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 8)}deg)`
     }
 
+    circle.style.opacity = `${scrollY * 0.05}%`
+  }
+}
+
+function handleSmallScreen(event) {
+  scrollY = event.target.scrollingElement.scrollTop
+
+  for (let index = 1; index <= 12; index++) {
+    const circle = circles[index - 1]
+
+    if (index <= 4) {
+      circle.style.transform = `rotate(${(scrollY * 0.2) / index}deg)`
+    }
+
+    if (index > 4 && index <= 8) {
+      circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 4)}deg)`
+    }
+
+    if (index > 8) {
+      circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 8)}deg)`
+    }
+
     circle.style.opacity = `${scrollY * 0.8}%`
   }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  circles.forEach(circle => {
+    circle.style.opacity = 0
+  })
 })
