@@ -181,7 +181,7 @@ function scaleImage(img, ctx) {
     var centerShift_x = (canvas.width - img.width * ratio) / 1.8;
     if(window.innerWidth < 430){
         ratio = 0.5;
-        centerShift_x = (canvas.width - ((img.width * ratio) + 220)) / 1.8;
+        centerShift_x = (canvas.width - ((img.width * ratio) + 210)) / 1.8;
     }
     var centerShift_y = (canvas.height - img.height * ratio) / 2;
     ctx.clearRect(0, 0, canvas.width - 1, canvas.height);
