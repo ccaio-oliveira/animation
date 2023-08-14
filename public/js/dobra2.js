@@ -175,10 +175,14 @@ function render() {
 
 function scaleImage(img, ctx) {
     var canvas = ctx.canvas;
-    var hRatio = canvas.width / img.width;
+    var hRatio = (canvas.width / img.width) / 2;
     var vRatio = canvas.height / img.height;
     var ratio = Math.max(hRatio, vRatio);
-    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_x = (canvas.width - img.width * ratio) / 1.8;
+    if(window.innerWidth < 430){
+        ratio = 0.5;
+        centerShift_x = (canvas.width - ((img.width * ratio) + 220)) / 1.8;
+    }
     var centerShift_y = (canvas.height - img.height * ratio) / 2;
     ctx.clearRect(0, 0, canvas.width - 1, canvas.height);
     ctx.drawImage(

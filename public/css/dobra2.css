@@ -34,9 +34,9 @@ canvas {
 @media (max-width: 430px){
     .image {
         width: 100%;
-        left: -8rem;
+        left: -2rem;
         top: -3rem;
-        transform: scale(0.75);
+        transform: scale(0.9);
         position: absolute;
     }
 
