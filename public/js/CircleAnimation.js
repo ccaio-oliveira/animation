@@ -7,11 +7,11 @@ const observerCallback = () => {
   const isLargeScreen = window.matchMedia("(min-width: 576px)").matches
 
   if (isLargeScreen) {
-    document.removeEventListener("scroll", event => handleSmallScreen(event))
+    document.removeEventListener("touchmove", event => handleSmallScreen(event))
     document.addEventListener("wheel", event => handleLargeScreen(event))
   } else {
     document.removeEventListener("wheel", event => handleLargeScreen(event))
-    document.addEventListener("scroll", event => handleSmallScreen(event))
+    document.addEventListener("touchmove", event => handleSmallScreen(event))
   }
 }
 
@@ -45,7 +45,8 @@ function handleLargeScreen(event) {
 }
 
 function handleSmallScreen(event) {
-  scrollY = event.target.scrollingElement.scrollTop
+  // scrollY = event.target.scrollingElement.scrollTop
+  scrollY = event.view.document.scrollingElement.scrollTop
 
   for (let index = 1; index <= 12; index++) {
     const circle = circles[index - 1]
