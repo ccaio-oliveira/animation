@@ -62,7 +62,7 @@ function handleSmallScreen(event) {
       circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 8)}deg)`
     }
 
-    circle.style.opacity = `${scrollY * 0.8}%`
+    circle.style.opacity = `${scrollY}%`
   }
 }
 
