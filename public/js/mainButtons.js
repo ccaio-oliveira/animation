@@ -33,6 +33,21 @@ gsap.to('#imgLogo', {
                 color: '#FFF'
             })
 
+            gsap.to('.social-media', {
+                boxShadow: '1px 4px 11px 0px rgba(106, 106, 106, 0.25)',
+                backgroundColor: '#0E141C',
+                color: '#FFF'
+            })
+
+            gsap.to('.fa-instagram', {
+                color: '#FFF'
+            })
+
+            gsap.to('.fa-linkedin-in', {
+                color: '#FFF',
+                borderColor: '#FFF'
+            })
+
             document.querySelector('.sidebar').classList.add('blackCont');
         },
         onLeave: function() {
@@ -47,6 +62,21 @@ gsap.to('#imgLogo', {
                 boxShadow: '0.99609375px 3.984375px 10.95703125px 0px rgba(0, 0, 0, 0.25)',
                 backgroundColor: '#F3F3F3',
                 color: '#000'
+            })
+
+            gsap.to('.social-media', {
+                boxShadow: '0.99609375px 3.984375px 10.95703125px 0px rgba(0, 0, 0, 0.25)',
+                backgroundColor: '#F3F3F3',
+                color: '#000'
+            })
+
+            gsap.to('.fa-instagram', {
+                color: '#000'
+            })
+
+            gsap.to('.fa-linkedin-in', {
+                color: '#000',
+                borderColor: '#000'
             })
 
             document.querySelector('.sidebar').classList.remove('blackCont');
@@ -65,6 +95,21 @@ gsap.to('#imgLogo', {
                 color: '#FFF'
             })
 
+            gsap.to('.social-media', {
+                boxShadow: '1px 4px 11px 0px rgba(106, 106, 106, 0.25)',
+                backgroundColor: '#0E141C',
+                color: '#FFF'
+            })
+
+            gsap.to('.fa-instagram', {
+                color: '#FFF'
+            })
+
+            gsap.to('.fa-linkedin-in', {
+                color: '#FFF',
+                borderColor: '#FFF'
+            })
+
             document.querySelector('.sidebar').classList.add('blackCont');
         },
         onLeaveBack: function() {
@@ -79,6 +124,21 @@ gsap.to('#imgLogo', {
                 boxShadow: '0.99609375px 3.984375px 10.95703125px 0px rgba(0, 0, 0, 0.25)',
                 backgroundColor: '#F3F3F3',
                 color: '#000'
+            })
+
+            gsap.to('.social-media', {
+                boxShadow: '0.99609375px 3.984375px 10.95703125px 0px rgba(0, 0, 0, 0.25)',
+                backgroundColor: '#F3F3F3',
+                color: '#000'
+            })
+
+            gsap.to('.fa-instagram', {
+                color: '#000'
+            })
+
+            gsap.to('.fa-linkedin-in', {
+                color: '#000',
+                borderColor: '#000'
             })
 
             document.querySelector('.sidebar').classList.remove('blackCont');

@@ -21,20 +21,6 @@
     font-size: 1.2rem;
 }
 
-#dobra9 .social-media {
-    position: absolute;
-    bottom: 4%;
-    right: 6%;
-    width: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #F3F3F3;
-    padding: 10px;
-    box-shadow: 0.996094px 3.98438px 10.957px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-}
-
 #dobra9 .knowServTech {
     width: 200px;
     background: #fff;

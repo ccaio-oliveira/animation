@@ -82,7 +82,7 @@ gsap.to(imageSeq8, {
 
             if (window.innerWidth > 430) {
                 gsap.to("#image", 0.2, {
-                    left: 300,
+                    left: 450,
                 })
             } else {
                 gsap.to('#txt82', {
@@ -113,7 +113,7 @@ gsap.to(imageSeq8, {
 
             if (window.innerWidth > 430) {
                 gsap.to("#image", 0.2, {
-                    left: -550,
+                    left: -450,
                 })
             }
         } else if (imageSeq8.frame > 99) {

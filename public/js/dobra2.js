@@ -74,7 +74,7 @@ gsap.to(imageSeq, {
         scrub: 0.15,
         trigger: `#dobra2`,
         //   set start end according to preference
-        start: (window.innerWidth < 430 ? 'top top' : `top -40%`),
+        start: (window.innerWidth < 430 ? 'top top' : `top top`),
         end: `400% top`,
     },
     onUpdate: render,
@@ -202,7 +202,7 @@ gsap.to('#pin2', {
     scrollTrigger: {
         trigger: '#dobra2',
         pin: true,
-        start: (window.innerWidth < 430 ? 'top top' : 'top -40%'),
+        start: (window.innerWidth < 430 ? 'top top' : 'top top'),
         end: '400% top',
     }
 })

@@ -53,8 +53,34 @@ a {
 
 .loading-screen h2 {
     position: absolute;
-    top: 28rem;
+    top: 20rem;
     z-index: 2;
+}
+
+.loading-container {
+    text-align: center;
+    width: 300px;
+    height: 12px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background-color: white;
+    position: relative;
+    top: 5rem;
+}
+
+.progress-bar {
+    width: 0;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #3498db;
+    transition: width 1s linear;
+    position: relative;
+    top: -1px;
+}
+
+.progress-text {
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 #imgLoad {
@@ -125,7 +151,7 @@ a {
     }
 
     .loading-screen h2 {
-        top: 35rem;
+        top: 50%;
         font-size: 1.0rem;
         width: 15rem;
         text-align: center;
