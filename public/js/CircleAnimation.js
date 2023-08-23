@@ -25,19 +25,17 @@ function handleLargeScreen(event) {
     scrollY = 0
   }
 
-  for (let index = 1; index <= 12; index++) {
+  for (let index = 1; index <= 8; index++) {
     const circle = circles[index - 1]
 
-    if (index <= 4) {
+    if (index <= circles.length / 2) {
       circle.style.transform = `rotate(${(scrollY * 0.2) / index}deg)`
     }
 
-    if (index > 4 && index <= 8) {
-      circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 4)}deg)`
-    }
-
-    if (index > 8) {
-      circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 8)}deg)`
+    if (index > circles.length / 2) {
+      circle.style.transform = `rotate(${
+        (scrollY * 0.2) / (index - circles.length / 2)
+      }deg)`
     }
 
     circle.style.opacity = `${scrollY * 0.05}%`
@@ -45,8 +43,7 @@ function handleLargeScreen(event) {
 }
 
 function handleSmallScreen(event) {
-  // scrollY = event.target.scrollingElement.scrollTop
-  scrollY = event.view.document.scrollingElement.scrollTop
+  scrollY = event.target.scrollingElement.scrollTop
 
   for (let index = 1; index <= 12; index++) {
     const circle = circles[index - 1]
