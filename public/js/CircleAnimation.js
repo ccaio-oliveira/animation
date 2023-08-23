@@ -1,22 +1,33 @@
 const circles = document.querySelectorAll(".circle")
-const bodyEl = document.querySelector("body")
+
+document.addEventListener("DOMContentLoaded", () => {
+  circles.forEach(circle => {
+    circle.style.opacity = 0
+  })
+
+  document.addEventListener("wheel", event => handleLargeScreen(event))
+
+  // bodyEl = document.querySelector("body")
+
+  // const observerCallback = () => {
+  //   const isLargeScreen = window.matchMedia("(min-width: 576px)").matches
+
+  //   if (isLargeScreen) {
+  //     document.removeEventListener("touchmove", event =>
+  //       handleSmallScreen(event)
+  //     )
+  //     document.addEventListener("wheel", event => handleLargeScreen(event))
+  //   } else {
+  //     document.removeEventListener("wheel", event => handleLargeScreen(event))
+  //     document.addEventListener("touchmove", event => handleSmallScreen(event))
+  //   }
+  // }
+
+  // const observer = new MutationObserver(observerCallback)
+  // observer.observe(bodyEl, { attributes: true })
+})
 
 let scrollY = 0
-
-const observerCallback = () => {
-  const isLargeScreen = window.matchMedia("(min-width: 576px)").matches
-
-  if (isLargeScreen) {
-    document.removeEventListener("touchmove", event => handleSmallScreen(event))
-    document.addEventListener("wheel", event => handleLargeScreen(event))
-  } else {
-    document.removeEventListener("wheel", event => handleLargeScreen(event))
-    document.addEventListener("touchmove", event => handleSmallScreen(event))
-  }
-}
-
-const observer = new MutationObserver(observerCallback)
-observer.observe(bodyEl, { attributes: true })
 
 function handleLargeScreen(event) {
   scrollY += event.deltaY
@@ -42,30 +53,24 @@ function handleLargeScreen(event) {
   }
 }
 
-function handleSmallScreen(event) {
-  scrollY = event.target.scrollingElement.scrollTop
+// function handleSmallScreen(event) {
+//   scrollY = event.target.scrollingElement.scrollTop
 
-  for (let index = 1; index <= 12; index++) {
-    const circle = circles[index - 1]
+//   for (let index = 1; index <= 12; index++) {
+//     const circle = circles[index - 1]
 
-    if (index <= 4) {
-      circle.style.transform = `rotate(${(scrollY * 0.2) / index}deg)`
-    }
+//     if (index <= 4) {
+//       circle.style.transform = `rotate(${(scrollY * 0.2) / index}deg)`
+//     }
 
-    if (index > 4 && index <= 8) {
-      circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 4)}deg)`
-    }
+//     if (index > 4 && index <= 8) {
+//       circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 4)}deg)`
+//     }
 
-    if (index > 8) {
-      circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 8)}deg)`
-    }
+//     if (index > 8) {
+//       circle.style.transform = `rotate(${(scrollY * 0.2) / (index - 8)}deg)`
+//     }
 
-    circle.style.opacity = `${scrollY}%`
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  circles.forEach(circle => {
-    circle.style.opacity = 0
-  })
-})
+//     circle.style.opacity = `${scrollY}%`
+//   }
+// }
